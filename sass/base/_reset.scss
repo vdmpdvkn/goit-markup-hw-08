@@ -1,0 +1,25 @@
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-family: $mainFont, sans-serif;
+  color: getcolor(primary-h);
+  letter-spacing: 0.03em;
+  background-color: getcolor(primary-white);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.img {
+  display: block;
+}
