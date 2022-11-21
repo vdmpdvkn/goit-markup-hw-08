@@ -26,12 +26,18 @@
           >
           <ul class="header-nav">
             <li class="header-nav__item">
-              <a href="./index.html" class="header-nav__link header-nav__link--current">Студія</a>
+              <a
+                href="./index.html"
+                class="header-nav__link header-nav__link--current"
+                >Студія</a
+              >
             </li>
             <li class="header-nav__item">
               <a href="./portfolio.html" class="header-nav__link">Портфоліо</a>
             </li>
-            <li class="header-nav__item"><a href="" class="header-nav__link">Контакти</a></li>
+            <li class="header-nav__item">
+              <a href="" class="header-nav__link">Контакти</a>
+            </li>
           </ul>
         </nav>
         <ul class="header-nav contacts-list">
@@ -60,7 +66,9 @@
             Ефективні рішення для <br />
             вашого бізнесу
           </h1>
-          <button type="button" class="hero__button" data-modal-open>Замовити послугу</button>
+          <button type="button" class="hero__button" data-modal-open>
+            Замовити послугу
+          </button>
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
               <button type="button" class="close__button" data-modal-close>
@@ -69,12 +77,20 @@
                 </svg>
               </button>
               <form class="js-speaker-form form">
-                <p class="form__title">Залиште свої дані, ми вам передзвонимо</p>
+                <p class="form__title">
+                  Залиште свої дані, ми вам передзвонимо
+                </p>
 
                 <label for="username" class="form__label">
                   Ім'я
                   <span class="form__wrapper">
-                    <input type="text" name="name" id="username" class="form__input" required />
+                    <input
+                      type="text"
+                      name="name"
+                      id="username"
+                      class="form__input"
+                      required
+                    />
                     <svg width="20" height="20" class="form__icon">
                       <use href="./images/symbol-defs.svg#icon-person"></use>
                     </svg>
@@ -83,7 +99,13 @@
                 <label for="number" class="form__label"
                   >Телефон
                   <span class="form__wrapper">
-                    <input type="tel" name="phone" id="number" class="form__input" required />
+                    <input
+                      type="tel"
+                      name="phone"
+                      id="number"
+                      class="form__input"
+                      required
+                    />
                     <svg width="20" height="20" class="form__icon">
                       <use href="./images/symbol-defs.svg#icon-phone"></use>
                     </svg>
@@ -92,7 +114,13 @@
                 <label for="usermail" class="form__label"
                   >Пошта
                   <span class="form__wrapper">
-                    <input type="email" name="mail" id="usermail" class="form__input" required />
+                    <input
+                      type="email"
+                      name="mail"
+                      id="usermail"
+                      class="form__input"
+                      required
+                    />
                     <svg width="20" height="20" class="form__icon">
                       <use href="./images/symbol-defs.svg#icon-email"></use>
                     </svg>
@@ -134,39 +162,50 @@
           <h2 class="visually-hidden">Наші переваги</h2>
           <ul class="benefits-list">
             <li class="benefits-list__item">
-              <svg width="70px" height="70px" class="benefits-list__icon">
-                <use href="./images/symbol-defs.svg#icon-antenna"></use>
-              </svg>
+              <div class="benefits-list__container">
+                <svg width="70px" height="70px" class="benefits-list__icon">
+                  <use href="./images/symbol-defs.svg#icon-antenna"></use>
+                </svg>
+              </div>
               <h3 class="benefits-list__title">УВАГА ДО ДЕТАЛЕЙ</h3>
               <p class="benefits-list__text">
-                Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
+                Ідейні міркування, і навіть початок повсякденної роботи з
+                формування позиції.
               </p>
             </li>
             <li class="benefits-list__item">
-              <svg width="70px" height="70px" class="benefits-list__icon">
-                <use href="./images/symbol-defs.svg#icon-clock"></use>
-              </svg>
+              <div class="benefits-list__container">
+                <svg width="70px" height="70px" class="benefits-list__icon">
+                  <use href="./images/symbol-defs.svg#icon-clock"></use>
+                </svg>
+              </div>
               <h3 class="benefits-list__title">ПУНКТУАЛЬНІСТЬ</h3>
               <p class="benefits-list__text">
-                Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
+                Завдання організації, особливо рамки і місце навчання кадрів
+                тягне у себе.
               </p>
             </li>
             <li class="benefits-list__item">
-              <svg width="70px" height="70px" class="benefits-list__icon">
-                <use href="./images/symbol-defs.svg#icon-diagram"></use>
-              </svg>
+              <div class="benefits-list__container">
+                <svg width="70px" height="70px" class="benefits-list__icon">
+                  <use href="./images/symbol-defs.svg#icon-diagram"></use>
+                </svg>
+              </div>
               <h3 class="benefits-list__title">ПЛАНУВАННЯ</h3>
               <p class="benefits-list__text">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
             <li class="benefits-list__item">
-              <svg width="70px" height="70px" class="benefits-list__icon">
-                <use href="./images/symbol-defs.svg#icon-astronaut"></use>
-              </svg>
+              <div class="benefits-list__container">
+                <svg width="70px" height="70px" class="benefits-list__icon">
+                  <use href="./images/symbol-defs.svg#icon-astronaut"></use>
+                </svg>
+              </div>
               <h3 class="benefits-list__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
               <p class="benefits-list__text">
-                Значимість цих проблем настільки очевидна, що реалізація планових завдань.
+                Значимість цих проблем настільки очевидна, що реалізація
+                планових завдань.
               </p>
             </li>
           </ul>
@@ -229,25 +268,33 @@
                 <li>
                   <a href="" class="social-list__link"
                     ><svg width="20px" height="20px">
-                      <use href="./images/symbol-defs.svg#icon-instagram"></use></svg
+                      <use
+                        href="./images/symbol-defs.svg#icon-instagram"
+                      ></use></svg
                   ></a>
                 </li>
                 <li>
                   <a href="" class="social-list__link"
                     ><svg width="20px" height="20px">
-                      <use href="./images/symbol-defs.svg#icon-twitter"></use></svg
+                      <use
+                        href="./images/symbol-defs.svg#icon-twitter"
+                      ></use></svg
                   ></a>
                 </li>
                 <li>
                   <a href="" class="social-list__link"
                     ><svg width="20px" height="20px">
-                      <use href="./images/symbol-defs.svg#icon-facebook"></use></svg
+                      <use
+                        href="./images/symbol-defs.svg#icon-facebook"
+                      ></use></svg
                   ></a>
                 </li>
                 <li>
                   <a href="" class="social-list__link"
                     ><svg width="20px" height="20px">
-                      <use href="./images/symbol-defs.svg#icon-linkedin"></use></svg
+                      <use
+                        href="./images/symbol-defs.svg#icon-linkedin"
+                      ></use></svg
                   ></a>
                 </li>
               </ul>
@@ -266,25 +313,33 @@
                 <li>
                   <a href="" class="social-list__link"
                     ><svg width="20px" height="20px">
-                      <use href="./images/symbol-defs.svg#icon-instagram"></use></svg
+                      <use
+                        href="./images/symbol-defs.svg#icon-instagram"
+                      ></use></svg
                   ></a>
                 </li>
                 <li>
                   <a href="" class="social-list__link"
                     ><svg width="20px" height="20px">
-                      <use href="./images/symbol-defs.svg#icon-twitter"></use></svg
+                      <use
+                        href="./images/symbol-defs.svg#icon-twitter"
+                      ></use></svg
                   ></a>
                 </li>
                 <li>
                   <a href="" class="social-list__link"
                     ><svg width="20px" height="20px">
-                      <use href="./images/symbol-defs.svg#icon-facebook"></use></svg
+                      <use
+                        href="./images/symbol-defs.svg#icon-facebook"
+                      ></use></svg
                   ></a>
                 </li>
                 <li>
                   <a href="" class="social-list__link"
                     ><svg width="20px" height="20px">
-                      <use href="./images/symbol-defs.svg#icon-linkedin"></use></svg
+                      <use
+                        href="./images/symbol-defs.svg#icon-linkedin"
+                      ></use></svg
                   ></a>
                 </li>
               </ul>
@@ -303,25 +358,33 @@
                 <li>
                   <a href="" class="social-list__link"
                     ><svg width="20px" height="20px">
-                      <use href="./images/symbol-defs.svg#icon-instagram"></use></svg
+                      <use
+                        href="./images/symbol-defs.svg#icon-instagram"
+                      ></use></svg
                   ></a>
                 </li>
                 <li>
                   <a href="" class="social-list__link"
                     ><svg width="20px" height="20px">
-                      <use href="./images/symbol-defs.svg#icon-twitter"></use></svg
+                      <use
+                        href="./images/symbol-defs.svg#icon-twitter"
+                      ></use></svg
                   ></a>
                 </li>
                 <li>
                   <a href="" class="social-list__link"
                     ><svg width="20px" height="20px">
-                      <use href="./images/symbol-defs.svg#icon-facebook"></use></svg
+                      <use
+                        href="./images/symbol-defs.svg#icon-facebook"
+                      ></use></svg
                   ></a>
                 </li>
                 <li>
                   <a href="" class="social-list__link"
                     ><svg width="20px" height="20px">
-                      <use href="./images/symbol-defs.svg#icon-linkedin"></use></svg
+                      <use
+                        href="./images/symbol-defs.svg#icon-linkedin"
+                      ></use></svg
                   ></a>
                 </li>
               </ul>
@@ -340,25 +403,33 @@
                 <li>
                   <a href="" class="social-list__link"
                     ><svg width="20" height="20">
-                      <use href="./images/symbol-defs.svg#icon-instagram"></use></svg
+                      <use
+                        href="./images/symbol-defs.svg#icon-instagram"
+                      ></use></svg
                   ></a>
                 </li>
                 <li>
                   <a href="" class="social-list__link"
                     ><svg width="20px" height="20px">
-                      <use href="./images/symbol-defs.svg#icon-twitter"></use></svg
+                      <use
+                        href="./images/symbol-defs.svg#icon-twitter"
+                      ></use></svg
                   ></a>
                 </li>
                 <li>
                   <a href="" class="social-list__link"
                     ><svg width="20px" height="20px">
-                      <use href="./images/symbol-defs.svg#icon-facebook"></use></svg
+                      <use
+                        href="./images/symbol-defs.svg#icon-facebook"
+                      ></use></svg
                   ></a>
                 </li>
                 <li>
                   <a href="" class="social-list__link"
                     ><svg width="20px" height="20px">
-                      <use href="./images/symbol-defs.svg#icon-linkedin"></use></svg
+                      <use
+                        href="./images/symbol-defs.svg#icon-linkedin"
+                      ></use></svg
                   ></a>
                 </li>
               </ul>
@@ -421,13 +492,19 @@
             <address class="address">
               <ul class="address-list">
                 <li class="address-list__item">
-                  <a href="" class="address-list__link place">м. Київ, пр-т Лесі Українки, 26</a>
+                  <a href="" class="address-list__link place"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
                 </li>
                 <li class="address-list__item">
-                  <a href="mailto:" class="address-list__link">info@devstudio.com</a>
+                  <a href="mailto:" class="address-list__link"
+                    >info@devstudio.com</a
+                  >
                 </li>
                 <li class="address-list__item">
-                  <a href="tel:+380961111111" class="address-list__link">+38 096 111 11 11</a>
+                  <a href="tel:+380961111111" class="address-list__link"
+                    >+38 096 111 11 11</a
+                  >
                 </li>
               </ul>
             </address>
@@ -438,25 +515,33 @@
               <li>
                 <a href="" class="media-list__link"
                   ><svg width="20px" height="20px">
-                    <use href="./images/symbol-defs.svg#icon-instagram"></use></svg
+                    <use
+                      href="./images/symbol-defs.svg#icon-instagram"
+                    ></use></svg
                 ></a>
               </li>
               <li>
                 <a href="" class="media-list__link"
                   ><svg width="20px" height="20px">
-                    <use href="./images/symbol-defs.svg#icon-twitter"></use></svg
+                    <use
+                      href="./images/symbol-defs.svg#icon-twitter"
+                    ></use></svg
                 ></a>
               </li>
               <li>
                 <a href="" class="media-list__link"
                   ><svg width="20px" height="20px">
-                    <use href="./images/symbol-defs.svg#icon-facebook"></use></svg
+                    <use
+                      href="./images/symbol-defs.svg#icon-facebook"
+                    ></use></svg
                 ></a>
               </li>
               <li>
                 <a href="" class="media-list__link"
                   ><svg width="20px" height="20px">
-                    <use href="./images/symbol-defs.svg#icon-linkedin"></use></svg
+                    <use
+                      href="./images/symbol-defs.svg#icon-linkedin"
+                    ></use></svg
                 ></a>
               </li>
             </ul>
