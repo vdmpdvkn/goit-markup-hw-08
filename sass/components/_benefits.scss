@@ -1,8 +1,21 @@
 .benefits-list {
-  @include flexible;
-  gap: 30px;
+  @media screen and (min-width: 768px) {
+    @include flexible();
+    gap: 30px;
+    flex-wrap: wrap;
+  }
   &__item {
-    flex-basis: calc((100% - 3 * 30px) / 4);
+    &:not(:last-child){
+      @media screen and (max-width:767px) {
+        margin-bottom: 30px;
+      }
+    }
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 30px) / 2);
+    }
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc((100% - 3 * 30px) / 4);
+    }
   }
   &__title {
     margin-bottom: 10px;
@@ -10,18 +23,24 @@
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
   }
   &__text {
     font-size: 14px;
     line-height: 1.71;
-    color: mgetcolor(primary-p);
+    color: getcolor(primary-p);
   }
-  &__icon {
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 120px;
     margin-bottom: 30px;
-    padding: 25px 100px;
     border-radius: 4px;
     background-color: getcolor(secondary-bg);
-    width: 270px;
-    height: 120px;
   }
 }

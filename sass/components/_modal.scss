@@ -31,7 +31,7 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 40px;
-  &-open{
+  &-open {
     overflow: hidden;
   }
 }
@@ -154,7 +154,7 @@
 
   &__input:checked ~ &__title::before {
     background-color: getcolor(accent);
-    background-image: url('../images/icon-check.svg');
+    background-image: url("../images/icon-check.svg");
     background-repeat: no-repeat;
     background-position: 65% 60%;
     border-color: transparent;
@@ -162,7 +162,7 @@
     transition: background-color 250ms $transition-function;
   }
   &__title::before {
-    content: '';
+    content: "";
     display: inline-block;
     width: 16px;
     height: 15px;
