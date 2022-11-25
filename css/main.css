@@ -271,13 +271,13 @@ button {
   display: -ms-flexbox;
   display: flex;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .header-nav {
     display: none;
   }
 }
 .header-nav__item:not(:first-child) {
-  margin-left: 50px;
+  margin-left: 30px;
 }
 .header__main-nav {
   display: -webkit-box;
@@ -316,6 +316,7 @@ button {
   border: none;
   margin: 0;
   padding: 0;
+  z-index: 40;
 }
 @media screen and (min-width: 768px) {
   .menu-button {
@@ -330,6 +331,89 @@ button {
 }
 .menu-button.is-open .menu__close {
   display: block;
+}
+
+.header__mobile-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 796px;
+  background-color: #ececec;
+  padding: 48px 40px;
+}
+.menu-button + .header__mobile-nav {
+  -webkit-transform: translateX(101%);
+          transform: translateX(101%);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu-button.is-open + .header__mobile-nav {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .header__mobile-nav {
+    display: none;
+  }
+}
+
+.mobile-list__item:not(:last-child) {
+  margin-bottom: 36px;
+}
+.mobile-list__link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+.mobile-list__link--current {
+  color: #2196f3;
+}
+
+.contacts-mobile {
+  margin-top: 302px;
+  margin-bottom: 64px;
+}
+.contacts-mobile__item:first-child {
+  margin-bottom: 32px;
+}
+.contacts-mobile__link {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+.contacts-mobile__link--blue {
+  font-weight: 500;
+  font-size: 34px;
+  color: #2196f3;
+}
+
+.mobile-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.mobile-media__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+.mobile-media__link--table {
+  color: #afb1b8;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .nav {
@@ -362,7 +446,7 @@ button {
   width: 16px;
   height: 16px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .contacts-list {
     display: none;
   }
@@ -426,6 +510,12 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: fixed;
   top: 0;
   left: 0;
@@ -433,8 +523,9 @@ button {
   height: 100%;
   z-index: 2;
   opacity: 1;
-  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: scroll;
+  -webkit-transition: opacity 390ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 390ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: rgba(0, 0, 0, 0.2);
 }
 .backdrop.is-hidden {
@@ -442,27 +533,41 @@ button {
   pointer-events: none;
 }
 .backdrop.is-hidden .modal {
-  -webkit-transform: translate(-50%, -50%) scale(0.9);
-          transform: translate(-50%, -50%) scale(0.9);
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: -webkit-transform 550 cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 550 cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 550 cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 550 cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 550 cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%) scale(1);
-          transform: translate(-50%, -50%) scale(1);
-  -webkit-transition: -webkit-transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
-  width: 530px;
-  height: 580px;
+  position: relative;
+  -webkit-transition: -webkit-transform 550ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 550ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 550ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 550ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 550ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 320px;
+  min-height: 580px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 40px;
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    min-height: 609px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 530px;
+    height: 580px;
+  }
 }
 .modal-open {
   overflow: hidden;
@@ -493,13 +598,19 @@ button {
 }
 
 .form__title {
-  font-weight: 700;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 1.5;
+  font-weight: 700;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 12px;
+}
+@media screen and (min-width: 1200px) {
+  .form__title {
+    font-size: 20px;
+    line-height: 1.15;
+  }
 }
 .form__label {
   display: -webkit-box;
@@ -619,6 +730,11 @@ button {
           justify-content: center;
   margin-bottom: 30px;
 }
+@media screen and (max-width: 1199px) {
+  .checkbox {
+    margin-right: 15px;
+  }
+}
 .checkbox__input {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -648,11 +764,17 @@ button {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .checkbox__title {
+  font-size: 12px;
+  line-height: 1.16;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7142857143;
   letter-spacing: 0.03em;
   color: #757575;
+}
+@media screen and (min-width: 1200px) {
+  .checkbox__title {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 .checkbox__link {
   font-weight: inherit;
