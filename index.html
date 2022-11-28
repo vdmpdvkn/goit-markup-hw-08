@@ -58,7 +58,9 @@
         </ul>
         <button
           class="menu-toggle js-open-menu"
-          aira-expanded="false"
+          type="button"
+          aria-label="Кнопка відкриття мобільного меню"
+          aria-expanded="false"
           aria-controls="mobile-menu"
         >
           <svg width="40px" height="40px">
@@ -66,7 +68,11 @@
           </svg>
         </button>
         <div class="menu-container js-menu-container" id="mobile-menu">
-          <button class="menu-toggle js-close-menu">
+          <button
+            class="menu-toggle js-close-menu"
+            type="button"
+            aria-label="Кнопка закриття мобільного меню"
+          >
             <svg width="40px" height="40px">
               <use href="./images/symbol-defs.svg#icon-close"></use>
             </svg>
@@ -98,19 +104,13 @@
           </ul>
           <ul class="mobile-social">
             <li class="mobile-social__item">
-              <a href="" class="mobile-social__link mobile-social__link--line1"
-                >Instagram</a
-              >
+              <a href="" class="mobile-social__link">Instagram</a>
             </li>
             <li class="mobile-social__item">
-              <a href="" class="mobile-social__link mobile-social__link--line2"
-                >Twitter</a
-              >
+              <a href="" class="mobile-social__link">Twitter</a>
             </li>
             <li class="mobile-social__item">
-              <a href="" class="mobile-social__link mobile-social__link--line3"
-                >Facebook</a
-              >
+              <a href="" class="mobile-social__link">Facebook</a>
             </li>
             <li class="mobile-social__item">
               <a href="" class="mobile-social__link">LinkedIn</a>
