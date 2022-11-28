@@ -1,0 +1,126 @@
+.menu-open {
+  overflow: hidden;
+}
+.menu-toggle {
+  position: relative;
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  &:hover,
+  &:focus {
+    fill: getcolor(accent);
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  &.js-close-menu {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+  }
+}
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 40px;
+  z-index: 2;
+  background-color: #fff;
+  transform: translateX(100%);
+  transition: transform 250ms $transition-function;
+  &.is-open {
+    overflow-y: scroll;
+    transition: transform 250ms $transition-function;
+    transform: translateX(0);
+  }
+}
+.mobile-nav {
+  &__item:not(:last-child) {
+    margin-bottom: 36px;
+  }
+  &__link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+    color: getcolor(primary-h);
+    &--current,
+    &:hover {
+      color: getcolor(accent);
+    }
+  }
+}
+.mobile-contacts {
+  margin-top: 302px;
+  margin-bottom: 64px;
+  &__item:first-child {
+    margin-bottom: 32px;
+  }
+  &__link {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    color: getcolor(primary-p);
+    &:hover,
+    &:focus {
+      color: getcolor(accent);
+    }
+    &--big {
+      font-size: 34px;
+      line-height: 40px;
+      color: getcolor(accent);
+    }
+  }
+}
+.mobile-social {
+  display: flex;
+  &__item:not(:last-child) {
+    margin-right: 20px;
+  }
+  &__link {
+    position: relative;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: getcolor(accent);
+    &:hover,
+    &:focus {
+      color: getcolor(hover-accent);
+    }
+    &--line1::after {
+      content: "";
+      position: absolute;
+      right: -10px;
+      height: 22px;
+      border: 1px solid getcolor(borders-color);
+    }
+    &--line2::after {
+      content: "";
+      position: absolute;
+      right: -10px;
+      height: 22px;
+      border: 1px solid getcolor(borders-color);
+    }
+    &--line3::after {
+      content: "";
+      position: absolute;
+      right: -10px;
+      height: 22px;
+      border: 1px solid getcolor(borders-color);
+    }
+  }
+}
