@@ -1023,7 +1023,7 @@ button {
 }
 @media screen and (max-width: 479px) {
   .team-list__member {
-    width: 270px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 480px) {
