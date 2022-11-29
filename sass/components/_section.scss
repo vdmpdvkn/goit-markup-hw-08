@@ -32,6 +32,12 @@
       line-height: 1.62;
     }
   }
+  &--portfolio {
+    @media screen and (max-width: 1199px) {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+  }
   &--team-bg {
     background-color: getcolor(secondary-bg);
   }
@@ -49,6 +55,7 @@
         rgba(47, 48, 58, 0.4)
       ),
       url("../images/briefing.jpg");
+    background-size: cover;
     text-align: center;
   }
   &--padding {

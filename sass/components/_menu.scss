@@ -39,12 +39,12 @@
   z-index: 2;
   background-color: #fff;
   transform: translateX(100%);
-  transition-delay: 250ms;
   transition: transform 250ms $transition-function;
+  transition-delay: 100ms;
   &.is-open {
     overflow-y: scroll;
-    transition-delay: 250ms;
     transition: transform 250ms $transition-function;
+    transition-delay: 100ms;
     transform: translateX(0);
   }
 }
