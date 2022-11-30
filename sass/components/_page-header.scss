@@ -7,9 +7,9 @@
 .header {
   border-bottom: 1px solid #ececec;
   &-nav {
-    display: flex;
-    @media screen and (max-width: 767px) {
-      display: none;
+    display: none;
+    @media screen and (min-width: $tablet) {
+      display: flex;
     }
   }
   &-nav__item:not(:first-child) {
@@ -49,13 +49,14 @@
   @include align;
 }
 .contacts-list {
-  display: flex;
-  @media screen {
+  display: none;
+  @media screen and (min-width: $tablet) {
+    display: flex;
     flex-direction: column;
     gap: 10px;
     padding: 19px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     flex-direction: row;
     gap: 30px;
     padding: 32px;
@@ -74,8 +75,5 @@
     margin-right: 10px;
     width: 16px;
     height: 16px;
-  }
-  @media screen and (max-width: 767px) {
-    display: none;
   }
 }

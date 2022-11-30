@@ -3,7 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Украинская Веб-студия. Создадим очень дорогой сайт за очень хорошую цену."
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>WebStudio</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -324,16 +329,33 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="team-list">
             <li class="team-list__member">
-              <img
-                class="team-list__photo"
-                srcset="
-                  ./images/igordemyanenko.jpg    1x,
-                  ./images/igordemyanenko@2x.jpg 2x
-                "
-                src="./images/igordemyanenko.jpg"
-                alt="Ігор Дем'яненко"
-                width="450"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/igordemyanenko-desc.jpg    1x,
+                    ./images/team/igordemyanenko-desc@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    /images/team/igordemyanenko-tab.jpg     1x,
+                    ./images/team/igordemyanenko-tab@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    /images/team/igordemyanenko-mob.jpg     1x,
+                    ./images/team/igordemyanenko-mob@2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img
+                  src="./images/team/igordemyanenko-desc.jpg"
+                  alt="Ігор Дем'яненко"
+                />
+              </picture>
               <h3 class="team-list__name">Ігор Дем'яненко</h3>
               <p class="team-list__position">Product Designer</p>
               <ul class="social-list">
@@ -372,16 +394,33 @@
               </ul>
             </li>
             <li class="team-list__member">
-              <img
-                srcset="
-                  ./images/olgarepina.jpg    1x,
-                  ./images/olgarepina@2x.jpg 2x
-                "
-                src="./images/olgarepina.jpg"
-                width="450"
-                alt="Ольга Рєпіна"
-                class="team-list__photo"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/olgarepina-desc.jpg    1x,
+                    ./images/team/olgarepina-desc@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    /images/team/olgarepina-tab.jpg     1x,
+                    ./images/team/olgarepina-tab@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    /images/team/olgarepina-mob.jpg     1x,
+                    ./images/team/olgarepina-mob@2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img
+                  src="./images/team/olgarepina-desc.jpg"
+                  alt="Ольга Рєпіна"
+                />
+              </picture>
               <h3 class="team-list__name">Ольга Рєпіна</h3>
               <p class="team-list__position">Frontend Developer</p>
               <ul class="social-list">
@@ -420,16 +459,33 @@
               </ul>
             </li>
             <li class="team-list__member">
-              <img
-                srcset="
-                  ./images/mykolatarasov.jpg    1x,
-                  ./images/mykolatarasov@2x.jpg 2x
-                "
-                src="./images/mykolatarasov.jpg"
-                width="450px"
-                alt="Микола Тарасов"
-                class="team-list__photo"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/mykolatarasov-desc.jpg    1x,
+                    ./images/team/mykolatarasov-desc@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    /images/team/mykolatarasov-tab.jpg     1x,
+                    ./images/team/mykolatarasov-tab@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    /images/team/mykolatarasov-mob.jpg     1x,
+                    ./images/team/mykolatarasov-mob@2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img
+                  src="./images/team/mykolatarasov-desc.jpg"
+                  alt="Микола Тарасов"
+                />
+              </picture>
               <h3 class="team-list__name">Микола Тарасов</h3>
               <p class="team-list__position">Marketing</p>
               <ul class="social-list">
@@ -468,16 +524,33 @@
               </ul>
             </li>
             <li class="team-list__member">
-              <img
-                srcset="
-                  ./images/myhailoermakov.jpg    1x,
-                  ./images/myhailoermakov@2x.jpg 2x
-                "
-                src="./images/myhailoermakov.jpg"
-                width="450px"
-                alt="Михайло Єрмаков"
-                class="team-list__photo"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/myhailoermakov-desc.jpg    1x,
+                    ./images/team/myhailoermakov-desc@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    /images/team/myhailoermakov-tab.jpg     1x,
+                    ./images/team/myhailoermakov-tab@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    /images/team/myhailoermakov-mob.jpg     1x,
+                    ./images/team/myhailoermakov-mob@2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img
+                  src="./images/team/myhailoremakov-desc.jpg"
+                  alt="Михайло Єрмаков"
+                />
+              </picture>
               <h3 class="team-list__name">Михайло Єрмаков</h3>
               <p class="team-list__position">UI Designer</p>
               <ul class="social-list">

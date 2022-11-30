@@ -1,5 +1,5 @@
 .benefits-list {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     @include flexible();
     gap: 30px;
     flex-wrap: wrap;
@@ -24,7 +24,7 @@
     line-height: 1.14;
     text-transform: uppercase;
     text-align: center;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       text-align: left;
     }
   }

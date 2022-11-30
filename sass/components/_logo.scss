@@ -6,14 +6,13 @@
   line-height: 1.2;
 }
 .header__logo {
-  padding-top: 16px;
-  padding-bottom: 16px;
-  margin-right: 90px;
+  padding: 16px 0;
+  margin-right: 0;
   &--black {
     color: #000;
   }
-  @media screen and (max-width: 768px) {
-    margin-right: 0;
+  @media screen and (min-width: $tablet) {
+    margin-right: 90px;
   }
 }
 .footer__logo {
