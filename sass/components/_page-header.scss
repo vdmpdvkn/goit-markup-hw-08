@@ -61,6 +61,11 @@
     gap: 30px;
     padding: 32px;
   }
+  &__item:last-child {
+    @media screen and (max-width: 1199px) {
+      margin-left: -2px;
+    }
+  }
   &__link {
     @include align;
     @extend %link-style;

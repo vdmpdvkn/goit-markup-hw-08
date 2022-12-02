@@ -460,6 +460,11 @@ button {
     padding: 32px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .contacts-list__item:last-child {
+    margin-left: -2px;
+  }
+}
 .contacts-list__link {
   display: -webkit-box;
   display: -ms-flexbox;
