@@ -19,7 +19,16 @@ p {
   margin: 0;
   padding: 0;
 }
-
+h2::selection,
+h3::selection,
+h4::selection,
+h1::selection,
+h5::selection,
+h6::selection,
+p::selection {
+  color: #fff;
+  background-color: getcolor(accent);
+}
 img {
   display: block;
   max-width: 100%;
