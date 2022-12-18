@@ -80,7 +80,70 @@ button {
   transition-property: color, background-color, box-shadow, fill;
   transition-property: color, background-color, box-shadow, fill, -webkit-box-shadow;
 }
+button:hover {
+  -webkit-animation-name: button;
+          animation-name: button;
+  -webkit-animation-duration: 1.3s;
+          animation-duration: 1.3s;
+  -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
 
+@-webkit-keyframes button {
+  17% {
+    -webkit-transform: translateY(8px);
+            transform: translateY(8px);
+  }
+  33% {
+    -webkit-transform: translateY(-6px);
+            transform: translateY(-6px);
+  }
+  50% {
+    -webkit-transform: translateY(4px);
+            transform: translateY(4px);
+  }
+  67% {
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
+  }
+  83% {
+    -webkit-transform: translateY(1px);
+            transform: translateY(1px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes button {
+  17% {
+    -webkit-transform: translateY(8px);
+            transform: translateY(8px);
+  }
+  33% {
+    -webkit-transform: translateY(-6px);
+            transform: translateY(-6px);
+  }
+  50% {
+    -webkit-transform: translateY(4px);
+            transform: translateY(4px);
+  }
+  67% {
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
+  }
+  83% {
+    -webkit-transform: translateY(1px);
+            transform: translateY(1px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
 .thumb {
   position: relative;
   overflow: hidden;
@@ -1365,6 +1428,13 @@ button {
   opacity: 0;
   -webkit-transform: translateY(20px);
           transform: translateY(20px);
+}
+@media screen and (max-width: 1199px) {
+  .element-animation {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 
 .element-show {
