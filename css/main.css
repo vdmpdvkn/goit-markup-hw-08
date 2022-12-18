@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -23,6 +24,15 @@ body {
   color: #212121;
   letter-spacing: 0.03em;
   background-color: #ffffff;
+  scroll-behavior: smooth;
+}
+body::-webkit-scrollbar {
+  width: 3px; /* ширина для вертикального скролла */
+  height: 3px; /* высота для горизонтального скролла */
+  background-color: transparent;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #2196f3;
 }
 
 h1,
@@ -93,20 +103,20 @@ button:hover {
 
 @-webkit-keyframes button {
   17% {
-    -webkit-transform: translatex(8px);
-            transform: translatex(8px);
+    -webkit-transform: translatex(6px);
+            transform: translatex(6px);
   }
   33% {
-    -webkit-transform: translatex(-6px);
-            transform: translatex(-6px);
+    -webkit-transform: translatex(-4px);
+            transform: translatex(-4px);
   }
   50% {
     -webkit-transform: translatex(4px);
             transform: translatex(4px);
   }
   67% {
-    -webkit-transform: translatex(-2px);
-            transform: translatex(-2px);
+    -webkit-transform: translatex(-1px);
+            transform: translatex(-1px);
   }
   83% {
     -webkit-transform: translatex(1px);
@@ -120,20 +130,20 @@ button:hover {
 
 @keyframes button {
   17% {
-    -webkit-transform: translatex(8px);
-            transform: translatex(8px);
+    -webkit-transform: translatex(6px);
+            transform: translatex(6px);
   }
   33% {
-    -webkit-transform: translatex(-6px);
-            transform: translatex(-6px);
+    -webkit-transform: translatex(-4px);
+            transform: translatex(-4px);
   }
   50% {
     -webkit-transform: translatex(4px);
             transform: translatex(4px);
   }
   67% {
-    -webkit-transform: translatex(-2px);
-            transform: translatex(-2px);
+    -webkit-transform: translatex(-1px);
+            transform: translatex(-1px);
   }
   83% {
     -webkit-transform: translatex(1px);
@@ -788,6 +798,14 @@ button:hover {
   transition: -webkit-transform 550 cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 550 cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 550 cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 550 cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop::-webkit-scrollbar {
+  width: 3px; /* ширина для вертикального скролла */
+  height: 3px; /* высота для горизонтального скролла */
+  background-color: transparent;
+}
+.backdrop::-webkit-scrollbar-thumb {
+  background-color: #2196f3;
 }
 
 .modal {

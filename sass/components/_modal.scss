@@ -20,6 +20,14 @@
     transform: scale(0.9);
     transition: transform 550 $transition-function;
   }
+  &::-webkit-scrollbar {
+    width: 3px; /* ширина для вертикального скролла */
+    height: 3px; /* высота для горизонтального скролла */
+    background-color: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: getcolor(accent);
+  }
 }
 
 .modal {
