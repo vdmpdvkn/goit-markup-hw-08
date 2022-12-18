@@ -10,28 +10,28 @@ button {
   transition-property: color, background-color, box-shadow, fill;
   &:hover {
     animation-name: button;
-    animation-duration: 1.3s;
+    animation-duration: 550ms;
     animation-timing-function: $transition-function;
     animation-iteration-count: 1;
   }
 }
 @keyframes button {
   17% {
-    transform: translateY(8px);
+    transform: translatex(8px);
   }
   33% {
-    transform: translateY(-6px);
+    transform: translatex(-6px);
   }
   50% {
-    transform: translateY(4px);
+    transform: translatex(4px);
   }
   67% {
-    transform: translateY(-2px);
+    transform: translatex(-2px);
   }
   83% {
-    transform: translateY(1px);
+    transform: translatex(1px);
   }
   100% {
-    transform: translateY(0);
+    transform: translatex(0);
   }
 }
