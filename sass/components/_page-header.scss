@@ -22,8 +22,7 @@
   &-nav__link {
     @extend %link-style;
     color: getcolor(primary-h);
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding: 32px 0;
     &:hover,
     &:focus {
       color: getcolor(accent);
@@ -54,12 +53,12 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding: 19px;
+    padding: 19px 0;
   }
   @media screen and (min-width: $desktop) {
     flex-direction: row;
     gap: 30px;
-    padding: 32px;
+    padding: 32px 0;
   }
   &__item:last-child {
     @media screen and (max-width: 1199px) {

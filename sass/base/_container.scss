@@ -3,13 +3,13 @@
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-@media screen and (min-width:480px){
-  width: $phone;
-}
-@media screen and (min-width: 768px){
-  width: $tablet;
-}
-@media screen and (min-width:1200px){
-  width: $desktop;
-}
+  @media screen and (min-width: 480px) {
+    width: $phone;
+  }
+  @media screen and (min-width: 768px) {
+    width: $tablet;
+  }
+  @media screen and (min-width: 1200px) {
+    width: $desktop;
+  }
 }
