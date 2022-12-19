@@ -74,10 +74,10 @@ a {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-transition-property: fill, color, background-color, -webkit-box-shadow;
-  transition-property: fill, color, background-color, -webkit-box-shadow;
-  transition-property: fill, color, background-color, box-shadow;
-  transition-property: fill, color, background-color, box-shadow, -webkit-box-shadow;
+  -webkit-transition-property: fill, color, background-color, -webkit-box-shadow, -webkit-transform;
+  transition-property: fill, color, background-color, -webkit-box-shadow, -webkit-transform;
+  transition-property: fill, color, background-color, box-shadow, transform;
+  transition-property: fill, color, background-color, box-shadow, transform, -webkit-box-shadow, -webkit-transform;
 }
 
 button {
@@ -85,10 +85,10 @@ button {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-transition-property: color, background-color, fill, -webkit-box-shadow;
-  transition-property: color, background-color, fill, -webkit-box-shadow;
-  transition-property: color, background-color, box-shadow, fill;
-  transition-property: color, background-color, box-shadow, fill, -webkit-box-shadow;
+  -webkit-transition-property: color, background-color, fill, -webkit-box-shadow, -webkit-transform;
+  transition-property: color, background-color, fill, -webkit-box-shadow, -webkit-transform;
+  transition-property: color, background-color, box-shadow, fill, transform;
+  transition-property: color, background-color, box-shadow, fill, transform, -webkit-box-shadow, -webkit-transform;
 }
 button:hover {
   -webkit-animation-name: button;
@@ -99,6 +99,10 @@ button:hover {
           animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
+}
+button:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 @-webkit-keyframes button {
@@ -330,9 +334,6 @@ button:hover {
   color: #212121;
 }
 .filter-list__item:hover, .filter-list__item:focus, .filter-list__item:active {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   cursor: pointer;
@@ -1255,6 +1256,8 @@ button:hover {
 .customers-list__link:hover, .customers-list__link:focus {
   fill: #2196f3;
   border-color: #2196f3;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 .customers-list__icon {
   width: 106px;

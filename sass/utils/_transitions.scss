@@ -2,17 +2,20 @@ a {
   text-decoration: none;
   transition-duration: 250ms;
   transition-timing-function: $transition-function;
-  transition-property: fill, color, background-color, box-shadow;
+  transition-property: fill, color, background-color, box-shadow, transform;
 }
 button {
   transition-duration: 250ms;
   transition-timing-function: $transition-function;
-  transition-property: color, background-color, box-shadow, fill;
+  transition-property: color, background-color, box-shadow, fill, transform;
   &:hover {
     animation-name: button;
     animation-duration: 550ms;
     animation-timing-function: $transition-function;
     animation-iteration-count: 1;
+  }
+  &:active {
+    transform: scale(0.9);
   }
 }
 @keyframes button {
