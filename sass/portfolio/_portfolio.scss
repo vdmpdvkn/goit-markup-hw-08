@@ -104,6 +104,7 @@
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(101%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: scroll;
   @media screen and (min-width: $phone) {
     padding: 77px 24px;
   }

@@ -46,7 +46,7 @@ p {
   padding: 0;
 }
 
-h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h1::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection {
+h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h1::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, a::-moz-selection {
   color: #fff;
   background-color: #2196f3;
 }
@@ -57,7 +57,8 @@ h4::selection,
 h1::selection,
 h5::selection,
 h6::selection,
-p::selection {
+p::selection,
+a::selection {
   color: #fff;
   background-color: #2196f3;
 }
@@ -385,6 +386,7 @@ button:active {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: scroll;
 }
 @media screen and (min-width: 480px) {
   .overlay-text {
