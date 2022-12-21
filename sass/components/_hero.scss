@@ -12,9 +12,30 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   background-color: getcolor(accent);
   color: getcolor(primary-white);
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 80%;
+    height: 1px;
+    background: getcolor(primary-white);
+    bottom: 14px;
+    left: 22px;
+    right: 1px;
+    transform: scaleX(0);
+    transition: transform 250ms $transition-function;
+    transform-origin: right;
+  }
+
   &:hover,
   &:focus {
     background-color: getcolor(hover-accent);
+  }
+  &:hover::after,
+  &:focus::after {
+    transform: scaleX(100%);
+    transform-origin: left;
   }
   @media screen and (min-width: 1200px) {
     width: 216px;

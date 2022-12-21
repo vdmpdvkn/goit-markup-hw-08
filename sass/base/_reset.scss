@@ -3,20 +3,20 @@ ul {
   margin: 0px;
   padding: 0px;
 }
+*::-webkit-scrollbar {
+  width: 3px; /* ширина для вертикального скролла */
+  height: 3px; /* высота для горизонтального скролла */
+  background-color: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: getcolor(accent);
+}
 body {
   font-family: $mainFont, sans-serif;
   color: getcolor(primary-h);
   letter-spacing: 0.03em;
   background-color: getcolor(primary-white);
   scroll-behavior: smooth;
-  &::-webkit-scrollbar {
-    width: 3px; /* ширина для вертикального скролла */
-    height: 3px; /* высота для горизонтального скролла */
-    background-color: transparent;
-  }
-  &::-webkit-scrollbar-thumb {
-    background-color: getcolor(accent);
-  }
 }
 h1,
 h2,
